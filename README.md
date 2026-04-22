@@ -3,6 +3,9 @@
 ## 🔗 Dashboard interattiva Link : https://github.com/Maria2595/Analisi-vendite-sql/raw/main/SALES_DASHBOARD.pbix
 
 ## 📁 Contenuto repository
+File .sqlite con le query per effettuare le analisi
+Dasboard interattivva .pbix
+Open Dataset ECommerce (Kaggle)
 
 ## 📝 Descrizione
 L’open dataset contiene dati delle vendite di un ECommerce di prodotti di informatica in 35 stati in 3 anni (dal 2020 al 2022)
