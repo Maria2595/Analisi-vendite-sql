@@ -5,6 +5,8 @@
 
 📁 Contenuto repository
 
+
+
 Analisi-vendite-sql/
 ├── Dashboard/
 │   └── SALES_DASHBOARD.pbix          # Dashboard Power BI
