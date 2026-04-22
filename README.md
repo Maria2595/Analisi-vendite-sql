@@ -1,11 +1,13 @@
 # 📊 Progetto SQL + Power BI: Analisi vendite ECommerce di prodotti di informatica (Aprile 2026)
 
 ## 🔗 Scarica file per visualizzare la dashboard : https://github.com/Maria2595/Analisi-vendite-sql/raw/main/SALES_DASHBOARD.pbix
+** Non ho pubblicato la dashboard live per motivi di policy di sicurezza
 
 ## 📁 Contenuto repository
-File .sqlite con le query per effettuare le analisi
-Dasboard interattivva .pbix
-Open Dataset ECommerce (Kaggle)
+Analisi-vendite-sql/
+└── SALES_DASHBOARD.pbix # Dashboard Power BI
+└── Script.sql # Query analisi per segmentazione ragnge vendite, calcolo KPI per segmento, trend analysis
+└── ecommerce_dataset.csv # Dataset originale (Kaggle)
 
 ## 📝 Descrizione
 L’open dataset contiene dati delle vendite di un ECommerce di prodotti di informatica in 35 stati in 3 anni (dal 2020 al 2022)
@@ -27,16 +29,47 @@ Per analizzare le differenze nei vari stati ho stabilito dei range di vendite an
 - Power BI
 
 ## 📈 Insight principali
-- ** Insight 1: ** Necessario analisi approfondita per i segmenti ‘Low Sales’, ‘Medium Sales’ e ‘Upper Medium Sales’ in quanto l’aumento delle vendite degli ultimi due anni ha registrato una diminuzione del margine di profitto per cui, in mancanza di ulteriori dati, è utile ipotizzare delle promozioni importanti che hanno però eroso i margini.
-- ** Insight 2: ** Il segmento High Sales ha mostrato i risultati migliori con aumento delle vendite negli ultimi due anni e aumento del margine di profitto.
-- ** Insight 3: ** Il segmento Top Sales ha registrato un calo delle vendite e del margine di profitto negli ultimi due anni. 
-- ** Insight 4: ** Come già visibile dalla dashboard è presente il carattere di stagionalità in tutti gli stati 
-** Limiti: ** mancanza di dati su operazioni di vendita, promozioni, azioni dei competitor 
+- ** Insight 1: - **Low, Medium e Upper Medium Sales:** vendite in aumento negli ultimi due anni, ma **margine di profitto in diminuzione**
+  **Ipotesi (in assenza di dati su promozioni):** sconti aggressivi che hanno eroso i margini
 
-## 📈 ## Perché questo è comunque un risultato
-1. ** Certifica il fatto: ** sappiamo che le vendite sono cresciute ed alcuni stati necessitando di analisi approfondite
-2. ** Fissa una baseline: ** avere una baseline permette di confrontare eventuali analisi future con questo periodo
-3. ** Indica una direzione: ** i risultati di alcuni segmenti necessitano ulteriori analisi e la categoria ‘High Sales’ indica un’individuazione del target dei clienti più efficiente. 
+### Insight 2 – Il segmento più efficiente
+- **High Sales:** vendite e margine di profitto in costante aumento
+- Modello di efficienza da imitare per gli altri segmenti
+  
+- ** Insight 3: ** Segmento con performance peggiore
+- ** Top Sales:** calo delle vendite e del margine di profitto negli ultimi due anni
+- Richiede analisi approfondita
 
+- ** Insight 4: ** Stagionalità 
+- Trend con picchi da febbraio a giugno comune a tutti gli stati
+
+## ⚠️ Limiti dichiarati (trasparenza sull'analisi)
+
+ Non è possibile individuare gli elementi che causano i trend osservati in quanto perchè mancano i seguenti dati:
+ - Promozioni attive nel periodo
+- Azioni dei competitor
+- Eventi di marketing specifici
+
+**Cosa servirebbe per andare oltre:**  
+Integrare i dati attuali con fonti esterne o qualitative per identificare i fattori causali.
+
+## 💻 Snippet SQL (esempio)
+
+Ecco un esempio della query utilizzata per segmentare gli stati in base alle vendite annuali:
+
+-- CLASSIFICAZIONE STATI
+select distinct State_Code as State,
+       Year,
+       sum(Total_sales) as Revenue,
+       case
+       	when sum(Total_Sales) < 100000 then 'Low Sales'
+       	when sum(Total_Sales) > 100000 and sum(Total_Sales) < 300000 then 'Medium Sales'
+       	when sum(Total_Sales) > 300000 and sum(Total_Sales) < 500000 then 'Upper Medium Sales'
+       	when sum(Total_Sales) > 500000 and sum(Total_Sales) < 1000000 then 'High Sales'
+       	when sum(Total_Sales) > 1000000 then 'Top Sales'
+       end as Sales_Performance
+from sales 
+group by 1, 2 
+order by 2;
 
 
