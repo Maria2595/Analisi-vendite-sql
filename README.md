@@ -5,8 +5,11 @@
 
 ## 📁 Contenuto repository
 Analisi-vendite-sql/
+├── Dashboard/
 └── SALES_DASHBOARD.pbix # Dashboard Power BI
+├── AnalisiSQL/
 └── Script.sql # Query analisi per segmentazione ragnge vendite, calcolo KPI per segmento, trend analysis
+├── KaggleDataset/
 └── ecommerce_dataset.csv # Dataset originale (Kaggle)
 
 ## 📝 Descrizione
