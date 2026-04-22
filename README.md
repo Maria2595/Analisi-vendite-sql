@@ -6,11 +6,12 @@
 ## 📁 Contenuto repository
 Analisi-vendite-sql/
 ├── Dashboard/
-└── SALES_DASHBOARD.pbix # Dashboard Power BI
+│   └── SALES_DASHBOARD.pbix          # Dashboard Power BI
 ├── AnalisiSQL/
-└── Script.sql # Query analisi per segmentazione ragnge vendite, calcolo KPI per segmento, trend analysis
+│   └── Script.sql                    # Query: segmentazione, KPI, trend
 ├── KaggleDataset/
-└── ecommerce_dataset.csv # Dataset originale (Kaggle)
+│   └── ecommerce_dataset.csv         # Dataset originale (Kaggle)
+└── README.md
 
 ## 📝 Descrizione
 L’open dataset contiene dati delle vendite di un ECommerce di prodotti di informatica in 35 stati in 3 anni (dal 2020 al 2022)
