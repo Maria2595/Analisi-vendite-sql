@@ -12,12 +12,13 @@ L’open dataset contiene dati delle vendite di un ECommerce di prodotti di info
 Il trend mensile delle vendite mostra il carattere di stagionalità dove nel periodo da febbraio a giugno si registrano le vendite più alte dell’anno.
 Per analizzare le differenze nei vari stati ho stabilito dei range di vendite annuali in questo modo:
 
-Categoria                                         Range
-Low Sales                                70000 - 100000
-Medium Sales                        100000 - 300000
-Upper Medium Sales            300000 - 500000
-High Sales                               500000 - 1000000
-Top Sales                                 > 1000000
+|   Categoria         |          Range        |
+|---------------------| ----------------------|
+| Low Sales           |     70000 - 100000    |
+| Medium Sales        |     100000 - 300000   |
+| Upper Medium Sales  |     300000 - 500000   |
+| High Sales          |     500000 - 1000000  |
+| Top Sales           |         > 1000000     |
 
 
 ## 🛠️ Strumenti usati
