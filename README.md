@@ -3,7 +3,8 @@
 ## 🔗 Scarica file per visualizzare la dashboard : https://github.com/Maria2595/Analisi-vendite-sql/raw/main/SALES_DASHBOARD.pbix
 ** Non ho pubblicato la dashboard live per motivi di policy di sicurezza
 
-## 📁 Contenuto repository
+📁 Contenuto repository
+
 Analisi-vendite-sql/
 ├── Dashboard/
 │   └── SALES_DASHBOARD.pbix          # Dashboard Power BI
