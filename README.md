@@ -13,6 +13,8 @@ Analisi-vendite-sql/
 │   └── Script.sql                    # Query: segmentazione, KPI, trend
 ├── KaggleDataset/
 │   └── ecommerce_dataset.csv         # Dataset originale (Kaggle)
+├── Storytelling/
+│   └── Analisi Vendite.pptx          # Storytelling con insight aggiuntivi alla dashboard
 └── README.md
 
 ## 📝 Descrizione
