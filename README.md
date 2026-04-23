@@ -51,8 +51,8 @@ Per analizzare le differenze nei vari stati ho stabilito dei range di vendite an
 
 ## ⚠️ Limiti dichiarati (trasparenza sull'analisi)
 
- Non è possibile individuare gli elementi che causano i trend osservati in quanto perchè mancano i seguenti dati:
- - Promozioni attive nel periodo
+ Non è possibile individuare gli elementi che causano i trend osservati in quanto mancano i seguenti dati:
+- Promozioni attive nel periodo
 - Azioni dei competitor
 - Eventi di marketing specifici
 
