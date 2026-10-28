@@ -1,5 +1,13 @@
 # 📊 Progetto SQL + Power BI: Analisi vendite ECommerce di prodotti di informatica (Aprile 2026)
 
+Anteprima Dashbaord (Aggiornamento Ottobre 2026)
+
+
+
+https://github.com/user-attachments/assets/a8963e8c-0d84-4ac0-8824-bf85dcef84e4
+
+
+
 ## 🔗 Scarica file per visualizzare la dashboard : https://github.com/Maria2595/Analisi-vendite-sql/raw/main/SALES_DASHBOARD.pbix
 ** Non ho pubblicato la dashboard live per motivi di policy di sicurezza
 
